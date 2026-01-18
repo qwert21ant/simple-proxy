@@ -1,9 +1,13 @@
 {
   "name": "@qwert21ant/simple-proxy",
-  "version": "1.0.0",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "version": "1.0.1",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "tsc -p ./tsconfig.build.json",
     "test": "ts-node tests/test.ts"
   },
